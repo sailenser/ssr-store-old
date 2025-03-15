@@ -1,0 +1,32 @@
+.grid-box{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.flex-norm{
+  flex: 0 1 auto !important;
+  width: auto !important;
+}
+
+a.active{
+  color: red !important;
+}
+
+.slide-enter-active{
+  animation: slideIn 0.3s;
+}
+
+.slide-leave-active{
+  animation: slideOut 0.3s;
+}
+
+@keyframes slideIn{
+  from{transform: rotateY(90deg);}
+  to{transform: rotateY(0deg);}
+}
+
+@keyframes slideOut{
+  from{transform: rotateY(0deg);}
+  to{transform: rotateY(90deg);}
+}
